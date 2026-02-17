@@ -1,385 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebStudio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="normaliza.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-div">
-      <a href="index.html" class="logo"><span>Web</span>Studio</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eats – Bootstrap layout</title>
 
-      <nav>
-        <ul class="nav">
-          <li><a  class="active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
-          <li><a href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-      </nav>
-        
-      <ul class = "hedul">
-        <li> <svg class = "headul header-svg-items"><use href = "./symbol-defs.svg#icon-envelope-hover"></use></svg> <a class="gmail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
-      <ul class = "hedul">
-        <li> <svg class = "headul header-svg-items"><use href = "./symbol-defs.svg#icon-Vector"></use></svg><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </div>
-  </header>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Hero section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero-button" data-modal-open >Замовити послугу</button>
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal-window">
-    <button class="close-circle" data-modal-close></button>
-    <br>
-    <h4 class="modal-title" style = "text-align:left; color: black;  white-space: nowrap; font-size: 16px;">Залиште свої дані, ми вам передзвонимо</h2>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <form class="modal-form">
-      <label>
-        <span style = "color: black; text-align:left;">Ім'я</span>
-        <input type="text" id="name" required />
-      </label>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+          <span class="brand-dot">•</span>
+          <span class="brand-name">Eats</span>
+          <span class="text-uppercase small text-muted ms-1">Restaurant</span>
+        </a>
 
-      <label>
-        <span style = "color: black; text-align:left;">Телефон</span>
-        <input type="tel" id="phone" required />
-      </label>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <label>
-        <span style = "color: black; text-align:left;">Пошта</span>
-        <input type="email" id="email" required /<svg><use href = "./symbol-defs.svg#icon-email-black-18dp-1"></use></svg>>
-      </label>
-
-      <label>
-        <span style = "color: black; text-align:left;">Коментар</span>
-        <textarea id="comment" placeholder = "Введіть текст"></textarea>
-      </label>
-
-<label class="agree-line">
-  <input type="checkbox">
-  <span>Погоджуюсь з розсилкою та приймаю <a href="#" style = "color: rgba(33, 150, 243, 1)">Умови договору</a></span>
-</label>
-
-
-      <button type="submit" class="send-btn">Відправити</button>
-    </form>
-  </div>
-</div>
-
-
-  </section>
-  <script src = "modal-26.js"></script>
-   
-  <!-- Features -->  
-  <section class="features section">
-    <div class="container"> 
-      <ul class="features-list">
-        <li class = "features-list-li">
-          <img src="photo_2025-09-14_12-33-03.jpg" alt="ghghgh" width="250px">
-          <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p class="feature-text">Ідейні міркування, і навіть початок<br> повсякденної роботи з формування<br> позиції.</p>
-        </li>   
-        <li class="features-list-li">  
-          <img src="photo_2025-09-14_12-33-07.jpg" alt="ghghgh" width="250px">
-          <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>          
-          <p class="feature-text">Завдання організації, особливо рамки<br> і місце навчання кадрів тягне у себе.</p>        
-        </li>      
-        <li class="features-list-li">     
-          <img src="photo_2025-09-14_12-33-11.jpg" alt="ghghgh" width="250px">
-          <h3 class="feature-title">ПЛАНУВАННЯ</h3>          
-          <p class="feature-text">Так само консультація з широким <br> активом значною мірою зумовлює.</p>        
-        </li>        
-        <li class="features-list-li">  
-          <img src="photo_2025-09-14_12-33-14.jpg" alt="ghghgh" width="250px">
-          <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>         
-          <p class="feature-text">Значимість цих проблем настільки<br> очевидна, що реалізація планових<br> завдань.</p>       
-        </li>      
-      </ul>
-    </div>
-  </section>
-<section class="WhatDoWeDo">
-        <div class="container WhatDoWeDo-section-container">
-          <h2 class="WhatDoWeDo-section-h2">Чим ми займаємося</h2>
-          <ul class="WhatDoWeDo-section-list">
-            <li class="WhatDoWeDo-section-list-items">
-              <img
-                src="8dac6a22eff34a388bbc6409758a002e5a58c3ca.jpg"
-                alt="img"
-                class="WhatDoWeDo-section-img-list-items"
-              />
-              <p class="WhatDoWeDo-p-list-items"><span>Десктопні додатки</span></p>
-            </li>
-            <li class="WhatDoWeDo-section-list-items">
-              <img
-                src="01590214fe209b7db875477ca0f844823574082d.jpg"
-                alt="img"
-                class="WhatDoWeDo-section-img-list-items"
-              />
-              <p class="WhatDoWeDo-p-list-items"><span>Мобільні додатки</span></p>
-            </li>
-            <li class="WhatDoWeDo-section-list-items">
-              <img
-                src="4ca103f5ff490664ba91f138b9f708e01d65306a.jpg"
-                alt="img"
-                class="WhatDoWeDo-section-img-list-items"
-              />
-              <p class="WhatDoWeDo-p-list-items"><span>Дизайнерські рішення</span></p>
-            </li>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">Faq</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
-      </section>
-  
-  <!-- Team -->
+      </div>
+    </nav>
 
- <section class="team-section section">
-    <div class="container">
-      <h2 class="team-title" style="text-align: center;">Наша команда</h2>
-      <div class="team-container">
-        <div class="team-member">
-          <img src="photo_2025-09-11_19-46-32.jpg" alt="Ігор Дем'яненко">
-          <div class="team-info">
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
-                <div class = "social-networks-wrapper">
-        <ul class="social-list">
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-instagram-2-2"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-twitter-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-facebook-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-linkedin-1"></use></svg>
-    </a>
-  </li>
-</ul>
-      </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <img src="photo_2025-09-11_19-47-06.jpg" alt="Ольга Рєпіна">
-          <div class="team-info">
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
-                <div class = "social-networks-wrapper">
-        <ul class="social-list">
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-instagram-2-2"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-twitter-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-facebook-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-linkedin-1"></use></svg>
-    </a>
-  </li>
-</ul>
-      </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <img src="photo_2025-09-11_19-47-11.jpg" alt="Микола Тарасов">
-          <div class="team-info">
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
-               <div class = "social-networks-wrapper">
-        <ul class="social-list">
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-instagram-2-2"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-twitter-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-facebook-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-linkedin-1"></use></svg>
-    </a>
-  </li>
-</ul>
-      </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <img src="photo_2025-09-11_19-46-07.jpg" alt="Михайло Єрмаков">
-          <div class="team-info">
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
-                <div class = "social-networks-wrapper">
-        <ul class="social-list">
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-instagram-2-2"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-twitter-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-facebook-1"></use></svg>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <svg><use href="./symbol-defs.svg#icon-linkedin-1"></use></svg>
-    </a>
-  </li>
-</ul>
-      </div>
+    <!-- HERO -->
+    <header class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-lg-8">
+            <div class="text-white-50 mb-2 small">Restaurant app</div>
+
+            <h1 class="display-5 fw-bold text-white mb-3">
+              Why stay hungry when <br class="d-none d-md-block" />
+              you can order form Eats
+            </h1>
+
+            <p class="text-white-50 mb-4">
+              Order in exchange for hunger
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a class="btn btn-brand px-4 py-2" href="#product">Delivery</a>
+              <a class="btn btn-outline-light px-4 py-2" href="#menu">Menu</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
- </section>
+    </header>
 
-      <section class="regular-customers">
-        <h2 class="regular-customers-h2">Постійні клієнти</h2>
-       <ul class="regular-customers-list">
+    <!-- HOW IT WORKS -->
+    <section class="py-5" id="product">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">How the app works</h2>
 
-  <li class="regular-customers-list-items">
-    
-      <svg class="customer first-customer">
-        <use href="./symbol-defs.svg#icon-Client-1"></use>
-      </svg>
-   
-  </li>
+        <!-- Block 1 -->
+        <div class="row align-items-center g-4 mb-5">
+          <div class="col-12 col-lg-5">
+            <div class="phone-card mx-auto">
+              <img
+                src="e4e9c156bd6cbed060bc5cf0d6d1047fa8896663.jpg"
+                class="img-fluid"
+                alt="Phone mockup 1"
+              />
+            </div>
+          </div>
 
-  <li class="regular-customers-list-items">
-    
-      <svg class="customer second-customer">
-        <use href="./symbol-defs.svg#icon-Client-2"></use>
-      </svg>
-    
-  </li>
+          <div class="col-12 col-lg-7">
+            <div class="section-kicker mb-2">Create an account</div>
+            <h3 class="fw-bold mb-3">
+              Create/login to an existing account to get started
+            </h3>
+            <p class="text-muted mb-0">
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
 
-  <li class="regular-customers-list-items">
-    
-      <svg class="customer third-customer">
-        <use href="./symbol-defs.svg#icon-Client-3"></use>
-      </svg>
-    
-  </li>
+        <!-- Block 2 (reversed on desktop) -->
+        <div class="row align-items-center g-4 flex-lg-row-reverse">
+          <div class="col-12 col-lg-5">
+            <div class="phone-card mx-auto">
+              <img
+                src="da85d2f7376ea74d33f7645b90668a37cda7227a.jpg"
+                class="img-fluid"
+                alt="Phone mockup 2"
+              />
+            </div>
+          </div>
 
-  <li class="regular-customers-list-items">
-  
-      <svg class="customer fourth-customer">
-        <use href="./symbol-defs.svg#icon-Client-4"></use>
-      </svg>
- 
-  </li>
+          <div class="col-12 col-lg-7">
+            <div class="section-kicker mb-2">Explore varieties</div>
+            <h3 class="fw-bold mb-3">
+              Shop for your favorites meal as e dey hot.
+            </h3>
+            <p class="text-muted mb-0">
+              Shop for your favorite meals or drinks and enjoy while doing it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <li class="regular-customers-list-items">
-   
-      <svg class="customer fifth-customer">
-        <use href="./symbol-defs.svg#icon-Client-5"></use>
-      </svg>
+    <!-- CTA -->
+    <section class="cta-section" id="menu">
+      <div class="cta-overlay"></div>
 
-  </li>
+      <div class="container position-relative">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-lg-7">
+            <h2 class="text-white fw-bold mb-3">Order now.</h2>
+            <p class="text-white-50 mb-4">
+              Available on your favorite store. Start your premium experience now
+            </p>
 
-  <li class="regular-customers-list-items">
- 
-      <svg class="customer sixth-customer">
-        <use href="./symbol-defs.svg#icon-Client-6"></use>
-      </svg>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a class="btn btn-brand px-4 py-2" href="#">Playstore</a>
+              <a class="btn btn-outline-light px-4 py-2" href="#">App store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </li>
+    <!-- FOOTER -->
+    <footer class="py-4 bg-white border-top" id="contact">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <div class="d-flex align-items-center gap-2">
+          <span class="brand-dot">•</span>
+          <span class="fw-bold">Eats</span>
+          <span class="text-uppercase small text-muted ms-1">Restaurant</span>
+        </div>
 
-</ul>
-      </section>
-    </main>
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container foot">
+        <div class="text-muted small">
+          Copyright 2020 Bella Onojie.com
+        </div>
+      </div>
+    </footer>
 
-    <div class="footer-left">
-      <a href="#" class="footer-logo"><span>Web</span>Studio</a>
-
-      <address class="footer-address">
-        <p class="footer-address-item">м. Київ, пр-т Лесі Українки, 26</p>
-        <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
-    </div>
-
-    <div class="footer-right">
-      <h4 class="footer-title">Приєднуйтесь</h4>
-
-      <ul class="footer-social">
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-instagram-2-2"></use></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-twitter-1"></use></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-facebook-1"></use></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-linkedin-1"></use></svg>
-          </a>
-        </li>
-        <form class="modal-form">
-        <label>
-        <h4 style = "color: white; text-align:left;  white-space: nowrap; ">Підпишіться на розсилку</h4>
-        <input style = "background-color: rgba(47, 48, 58, 1);" type="email" id="email" required placeholder = "E-mail" />
-      </label>
-      <button type="submit" class="send-btn" style = "display: block;">Підписатися</button>
-      </form>
-      </ul>
-    </div>
-  </div>
-</footer>
-</body>
-</html>>
-
-
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
